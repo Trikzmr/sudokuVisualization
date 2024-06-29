@@ -37,6 +37,7 @@
     ]
   },
   "homepage": "https://Trikzmr.github.io/sudokuVisualization",
+
   "devDependencies": {
     "gh-pages": "^6.1.1"
   },

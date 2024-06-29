@@ -1,95 +1,80 @@
 body {
-  background-color: #121212;
+  background-color: #222;
   color: dodgerblue; /* Neon light green for text */
   font-family: 'Courier New', Courier, monospace; /* Optional: gives a digital look */
 }
 
-.row {
+h1{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.sudoku-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-row {
   display: flex;
 }
 
+
+
+.row {
+  display: flex;
+  font-weight: bold;
+}
+
+.col {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #98FF98;;
+  margin: 1px;
+  font-size: 20px;
+  color: dodgerblue;
+}
+
+
+
+
 .box {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #98FF98; /* Neon light green border */
+  border: 2px solid #98FF98; /* Neon light green border */
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: #1e1e1e;
+
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.box:hover {
-  background-color: #333;
-  color: #98FF98; /* Neon light green text on hover */
-}
-
-.left {
-  width: 50%;
-  float: left;
-}
-
-.right {
-  width: 50%;
-  float: right;
-}
-
-.controls {
+.box {
   display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  color: #98FF98; /* Neon light green for controls text */
+  flex-direction: column;
+  margin: 1px;
 }
 
-.controlBtn {
-  width: 40px;
-  height: 40px;
-  margin: 0 5px;
-  font-size: 18px;
-  color: #121212; /* Background color for icon */
-  border: 2px solid transparent;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: transparent;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #98FF98;
+button
+{
+  margin-top: 40px;
+  height: 44px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background: rgb(5, 92, 179);
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: .7s;
 }
 
-.minusBtn {
-  border-color: #ff007f;
- /* Initial background color for the minus button */
+button:hover{
+  background: dodgerblue;
+  transition: .7s;
 }
 
-.plusBtn {
-  border-color: #ffbf00; /* Initial background color for the plus button */
-}
-
-.controlBtn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.controlBtn i {
-  font-size: 16px;
-  color: #121212; /* Match the background color to make the arrow visible */
-}
-
-.controlBtn:hover {
-  transform: scale(1.1);
-}
-
-.minusBtn:hover {
-  background-color: #ff007f;
-}
-
-.plusBtn:hover {
-  background-color: #ffbf00;
-}
-
-.gridContainer {
-  color: dodgerblue; /* Neon light green for grid text */
-}
