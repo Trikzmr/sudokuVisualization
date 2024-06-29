@@ -15,8 +15,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -37,15 +37,11 @@
     ]
   },
   "homepage": "https://Trikzmr.github.io/sudokuVisualization",
-
   "devDependencies": {
     "gh-pages": "^6.1.1"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+  "scripts":{
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   }
-  
 }
